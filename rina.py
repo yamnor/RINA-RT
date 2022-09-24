@@ -73,7 +73,7 @@ def main():
 
     lc = collections.LineCollection(lines, linewidth = fracs, alpha = 0.5)
 
-    fig, ax = mkfig(6.0, 6.0)
+    fig, ax = mkfig(10.0, 6.0)
 
     for c in ['F', 'P', 'T', 'C', 'R']:
       ax.scatter(node[node['domain'] == c].x, node[node['domain'] == c].y, s = 25, alpha = 0.5, label = c)
@@ -140,7 +140,7 @@ def main():
       
       lc2 = collections.LineCollection(lines2, linewidth = fracs2, colors = color2, alpha = 0.5)
 
-      fig, ax = mkfig(6.0, 6.0)
+      fig, ax = mkfig(10.0, 6.0)
 
       for c in ['F', 'P', 'T', 'C', 'R']:
         ax.scatter(node[node['domain'] == c].x, node[node['domain'] == c].y, s = 25, alpha = 0.5, label = c)
